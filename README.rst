@@ -9,9 +9,10 @@ The module provides a context manager around the ``tempfile.mkdtemp`` library ca
  - The number of historic directories to be kept
  - Whether to delete historic directories at all - *here be dragons - be careful*
 
-As an example::
+As an example
 
-.. code:: python
+::
+.. code-block:: python
 
     import TempDirectoryContext as TempDirCont
 
@@ -35,7 +36,7 @@ The delete historic and keep_max arguments are applied on the basis of the prefi
 
 *Note* : The delete_historic and keep_max arguments are re-applied when the context manager is exited. This could lead to directories being deleted, despite the directory being seemingly protected when it was created: An example :
 
-.. code:: python
+.. code-block:: python
 
     import TempDirectoryContext as TempDirCont
 
@@ -56,6 +57,7 @@ The delete historic and keep_max arguments are applied on the basis of the prefi
     funcb()
     # At this point the directory created in funca() will be deleted
     # despite the argument ``delete_historic`` being False when the context manager is invoked.
+
 
 To avoid this, you should ensure that the ``delete_historic`` and ``keep_max`` settings are kept consistent when the same prefix and suffix are used, as the deletion process is applied on the basis of the prefix and suffix, rather than across all temporary directories.
 

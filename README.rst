@@ -14,7 +14,7 @@ As an example::
 .. code:: python
 
     import TempDirectoryContext as TempDirCont
-    ...
+
     with TempDirCont.TempDirectoryContext() as tmp:
         #
         # A temporary directory is created under the standard tmp directory - probably /tmp

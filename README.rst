@@ -11,7 +11,6 @@ The module provides a context manager around the ``tempfile.mkdtemp`` library ca
 
 As an example
 
-::
 .. code-block:: python
 
     import TempDirectoryContext as TempDirCont
@@ -19,7 +18,7 @@ As an example
     with TempDirCont.TempDirectoryContext() as tmp:
         #
         # A temporary directory is created under the standard tmp directory - probably /tmp
-        # The directory will be named : /tmp/tmp<xxxxx>TempDirCont - where <xxxxxx> is a random 6 character string
+        # The directory will be named : /tmp/tmp<xxxxxx>TempDirCont - where <xxxxxx> is a random 6 character string
         # (Assuming that the standard tmp directory is /tmp
         #
 
@@ -30,7 +29,7 @@ The context manager accept the following arguments:
     - delete_historic : A Boolean to determine if previous directories are deleted (defaults to ``True``)
     - keep_max : The maximum number of historic directories to keep (defaults to 3)
 
-As indicated the context manager keeps track of historically created temoorary directory and attempts to clean them up. The clean up action takes place when the context manager exits.
+As indicated the context manager keeps track of historically created temporary directory and attempts to clean them up. The clean up action takes place when the context manager exits.
 Historic directories are deleted in date order, and are counted based on the suffix and prefix values.
 The delete historic and keep_max arguments are applied on the basis of the prefix and suffix as well - allowing you to apply different deletion strategies to different sets of temporary directories.
 

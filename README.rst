@@ -25,7 +25,7 @@ As an example
 The context manager accept the following arguments:
     - prefix : The first characters of the directory name (defaults to ``tmp``)
     - suffix : The end characters of the directory name (defaults to ``TempDirCont``)
-    - dir : The directory into which the temporary directory is created (defaults to tempfile.gettempdir() )
+    - root : The directory into which the temporary directory is created (defaults to tempfile.gettempdir() )
     - delete_historic : A Boolean to determine if previous directories are deleted (defaults to ``True``)
     - keep_max : The maximum number of historic directories to keep (defaults to 3)
 

@@ -11,7 +11,6 @@ The module provides a context manager around the ``tempfile.mkdtemp`` library ca
 
 As an example
 
-::
 .. code-block:: python
 
     import TempDirectoryContext as TempDirCont

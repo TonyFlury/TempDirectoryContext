@@ -4,7 +4,7 @@ TempDirectoryContext
 
 The TempDirectoryContext provides a simple to use library that provides a context manager around the creation and deletion of temporary directories.
 
-The module provides a context manager around the ``tempfile.mkdtemp`` library calls, and providing automated clean up of the directories. By default the context manager keeps up to 3 historic temporary directories - especially useful for testing and debuging. It is possible to configure the following properties :
+The module provides a context manager around the ``tempfile.mkdtemp`` library calls, and providing automated clean up of the directories. By default the context manager keeps up to 3 historic temporary directories - especially useful for testing and debugging. It is possible to configure the following properties :
  - The Directory name Prefix and Suffix.
  - The number of historic directories to be kept
  - Whether to delete historic directories at all - *here be dragons - be careful*

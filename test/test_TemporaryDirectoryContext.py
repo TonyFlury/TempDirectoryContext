@@ -15,7 +15,7 @@ Testable Statements :
 import unittest
 import os.path
 import tempfile
-from TempDirectoryContext import TempDirectoryContext as TempDirCont
+import TempDirectoryContext as TempDirCont
 
 __version__ = "0.1"
 __author__ = 'Tony Flury : anthony.flury@btinternet.com'

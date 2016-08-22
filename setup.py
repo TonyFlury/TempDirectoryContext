@@ -34,13 +34,13 @@ setup(
         # Versions should comply with PEP440.  For a discussion on single-sourcing
         # the version across setup.py and the project code, see
         # https://packaging.python.org/en/latest/single_source_version.html
-        version="0.0.2a",
+        version="0.0.4a",
 
         description='A context manager around the creation of temporary directories',
         long_description=long_description,
 
         # The project's main homepage.
-        url='',
+        url='http://py-importjson.readthedocs.io/en/latest/',
 
         # Author details
         author='Tony Flury',
@@ -116,4 +116,6 @@ setup(
         # pip to create the appropriate form of executable for the target platform.
         entry_points={
         },
+        test_suite='test',
+        tests_require=['flake8']
 )

@@ -34,7 +34,7 @@ setup(
         # Versions should comply with PEP440.  For a discussion on single-sourcing
         # the version across setup.py and the project code, see
         # https://packaging.python.org/en/latest/single_source_version.html
-        version="0.0.1",
+        version="0.0.2a",
 
         description='A context manager around the creation of temporary directories',
         long_description=long_description,
@@ -59,7 +59,6 @@ setup(
 
             # Indicate who your project is intended for
             'Intended Audience :: Developers',
-            'Testing',
 
             # Pick your license as you wish (should match "license" above)
             'License :: OSI Approved :: GNU General Public License (GPL)',
@@ -73,6 +72,8 @@ setup(
             #        'Programming Language :: Python :: 3.2',
             #        'Programming Language :: Python :: 3.3',
             #        'Programming Language :: Python :: 3.4',
+            'Programming Language :: Python :: 3.5',
+            'Topic :: Software Development :: Testing'
         ],
 
         # What does your project relate to?
@@ -87,8 +88,6 @@ setup(
         # requirements files see:
         # https://packaging.python.org/en/latest/requirements.html
         install_requires=[''],
-
-        include_package_data=True,
 
         # List additional groups of dependencies here (e.g. development
         # dependencies). You can install these using the following syntax,

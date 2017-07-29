@@ -4,6 +4,7 @@ TemporaryDirectoryContext : Implementation of TemporaryDirectoryContext
 
 Summary :
     A context handler wrap around the tempfile module - to enable clean up and close down
+    
 Use Case :
     As an application I want to be able to create and tear down temporary files so that
     I can keep the environment clean
@@ -45,11 +46,17 @@ class TempDirectoryContext(object):
 
     def __init__(self, suffix="TempDirCont", prefix="tmp", root=None, delete_historic=True, keep_max=3):
         """Temporary Directory Context manager - create and manage Temporary directories
-            :param suffix :The initial part of the directory name
-            :param prefix ; The trailing part of the directory name
-            :param root : The directory in which the Temp directory is created
-                    defaults to tempfile.gettempdir() (normally /tmp)
-            :param delete_historic : Whether this context manager deletes historic directories on exit.
+        
+        :param suffix: The initial part of the directory name
+        :param prefix: The trailing part of the directory name
+        :param root: The directory in which the Temp directory is created; defaults to tempfile.gettempdir() (normally /tmp)
+        :param delete_historic: Whether this context manager deletes historic directories on exit.
+        
+        :type suffix: str
+        :type prefix: str
+        :type root: str
+        :type delete_historic: bool
+        :type keep_max: int
         """
         self._suffix = suffix
         self._prefix = prefix

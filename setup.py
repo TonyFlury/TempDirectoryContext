@@ -34,13 +34,13 @@ setup(
         # Versions should comply with PEP440.  For a discussion on single-sourcing
         # the version across setup.py and the project code, see
         # https://packaging.python.org/en/latest/single_source_version.html
-        version="0.0.5a",
+        version="1.0",
 
         description='A context manager around the creation of temporary directories',
         long_description=long_description,
 
         # The project's main homepage.
-        url='http://py-importjson.readthedocs.io/en/latest/',
+        url='http://tempdirectorycontext.readthedocs.io/en/latest/details.html',
 
         # Author details
         author='Tony Flury',
@@ -55,7 +55,7 @@ setup(
             #   3 - Alpha
             #   4 - Beta
             #   5 - Production/Stable
-            'Development Status :: 3 - Alpha',
+            'Development Status :: 5 - Production/Stable',
 
             # Indicate who your project is intended for
             'Intended Audience :: Developers',

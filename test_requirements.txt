@@ -1,0 +1,6 @@
+flake8
+tox
+coverage
+six>=1.10
+sphinx_rtd_theme
+codecov

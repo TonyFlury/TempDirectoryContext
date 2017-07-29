@@ -35,7 +35,7 @@ import shutil
 import os
 import os.path
 
-__version__ = "1.0"
+__version__ = "1.0.1"
 __author__ = 'Tony Flury : anthony.flury@btinternet.com'
 __created__ = '25 Aug 2015'
 
